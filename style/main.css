@@ -1,0 +1,167 @@
+/*-- reset--*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*--variaveis--*/
+:root{
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+/*--main--*/
+body{
+  background-color: var(--preto);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+h4{
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+
+/*--containers--*/
+
+.container{
+  margin-left: 1rem;
+}
+
+.filme-principal.container{
+  width: 70%;
+}
+
+/*--header--*/
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+header .logo{
+  color: var(--vermelho);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+header .logo span{
+  color: yellow;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 0.8rem;
+}
+
+header nav a:hover{
+  color: #ffffff;
+}
+
+/*--filme-principal*/
+
+.filme-principal{
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.842)100%), url('../img/capa_principal.jpg'); 
+  
+  height: 600px; /* definimos altura*/
+  background-size: cover; /* imagem preenche a caixa*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .titulo{
+  margin-bottom: 0.5rem;
+  
+}
+
+.filme-principal .descricao{
+  margin-bottom: 2rem;  
+}
+
+/*--BOTOES--*/
+.botao{
+  background-color: rgba(26, 24, 24, 0.50);
+  border: none;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-right: 0.5rem;
+}
+
+.botao:hover{
+  background-color: var(--vermelho);
+}
+
+.botao i{
+  margin-right: 0.5rem;
+}
+
+/*-carousel-filmes*/
+
+.carrosel{
+  padding-bottom: 1rem;
+}
+
+.carrosel h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  color: #ffffff;
+  margin: 2rem;
+}
+
+.box-filme{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*--BIOGRAFIA--*/
+
+.container-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  
+  padding-bottom: 1rem;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(110, 13, 13, 0.842)100%) , url(/img/bg-bio.jpg);
+     
+}
+
+.container-grid h3{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 2rem;
+}
+
+.container-grid img{
+  width: 40%;  
+}
+
+.item{
+  padding: 15px;
+}
+
+footer{
+  padding: 20px;
+}
